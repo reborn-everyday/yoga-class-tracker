@@ -2,6 +2,8 @@
 
 A simple tool to book yoga classes and track attendance automatically.
 
+Note: Microsoft Graph did not work reliably here, so this approach was dropped.
+
 ## Microsoft Teams notifier
 
 A lightweight notifier posts a reminder to a Teams channel at 8:00 AM KST on Monday, Tuesday, and Thursday.
