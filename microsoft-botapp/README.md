@@ -69,3 +69,13 @@ Following documentation will help you to extend the Basic Bot template.
 - [Publish the app to your organization or the Microsoft app store](https://learn.microsoft.com/microsoftteams/platform/toolkit/publish)
 - [Develop with Microsoft 365 Agents Toolkit CLI](https://aka.ms/teams-toolkit-cli/debug)
 - [Preview the app on mobile clients](https://aka.ms/teamsfx-mobile)
+
+
+## Bot App Troubleshooting Note
+
+While building the Microsoft Bot App, I hit repeated errors (including self-signed certificate issues). I tried a workaround that briefly worked:
+- Exposed the message endpoint through a Cloudflared tunnel.
+- Updated the Teams app configuration on dev.botframework.com to point the message endpoint to the tunnel URL.
+- Started the bot locally with `npm run`.
+
+After that, the bot responded, but I did not know the correct next steps and the bot still could not be invited into a group chat. I abandoned this approach.
